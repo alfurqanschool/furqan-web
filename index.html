@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/stellar.css">
+  <link rel="stylesheet" href="css/camera.css">
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/owl.carousel.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/jquery.mobile.customized.min.js"></script>
+  <!--<![endif]-->
+  <script>
+    $(document).ready(function () {
+
+      $('#camera_wrap').camera({
+        loader: true,
+        pagination: true,
+        minHeight: '',
+        thumbnails: false,
+        height: '48.33333333333%',
+        caption: false,
+        navigation: false,
+        fx: 'simpleFade',
+        onLoaded: function () {
+          $('.slider-wrapper')[0].style.height = 'auto';
+        }
+      });
+
+       $("#owl").owlCarousel({
+        items: 1, //10 items above 1000px browser width
+        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
+        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
+        itemsTablet: [700, 1], //2 items between 600 and 0
+        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+        navigation: false,
+        pagination: true
+      });
+
+        $("#owl_1").owlCarousel({
+        items: 1, //10 items above 1000px browser width
+        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
+        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
+        itemsTablet: [700, 1], //2 items between 600 and 0
+        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+        navigation: false,
+        pagination: true
+      });
+    });
+  </script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+
+<!--<![endif]-->
+  <!--[if lt IE 8]>
+  <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+  </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+</head>
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+  <div id="stuck_container">
+  <div class='top_bord'></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+        <a href="index.html">
+          <img src="images/alfurqan-logo.png" alt="Alfurqan School" height="80" width="80"/>
+        </a>
+      </h1>
+          <nav id="mainNav">
+            <ul class="sf-menu">
+              <li class="current"><a href="index.html">Home</a></li>
+              <!--<li><a href="#about_us">About</a></li>-->
+              <li><a href="#programs">Registration</a></li>
+              <!--<li><a href="#news">News</a></li>-->
+              <li class="last-menu-item"><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="clearfix"></div>
+          </nav>
+    <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+  <div class="slider-wrapper">
+    <div id="camera_wrap">
+      <div data-src="images/slider1.jpg">
+      </div>
+      <div data-src="images/slider2.jpg">
+      </div>
+      <div data-src="images/slider3.jpg">
+    </div>
+    </div>
+    <div class="container">
+            <div class="row">
+              <div class="grid_12">
+    <div class="camera_pag"></div>
+    </div>
+    </div>
+    </div>
+  </div>
+   <div id='programs' class='wrapper_1'>
+        <div class="container">
+          <div class="row">
+            <div class="grid_12 tac s1">
+              <h2><span></span><em>Welcome to Alfurqan School</em><span></span></h2>
+            </div>
+            <div class="grid_8 preffix_2 tac s2">
+              <p class="mar_t_3">With 6 levels, highly qualified teachers, and volunteers, Furqan School aims at teaching its students the Arabic letters, proper pronunciation, and the vowels (accents) of the Arabic language. Students will memorize several chapters from the holy Quran in order to practice the learned material; and there by become equipped with the tools to enable them to memorize the whole Quran</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="grid_4 mar_t_7 s1">
+              <h3>Part-time Programs</h3>
+              <p class="mar_t_2"> In 2016 Alfurqan School part-time programs started teaching with the “Al-nooraniyah” to help students learn tajweed rules in an easier and faster manner. Our students memorize the last three Juz of the Quran over a period of six years in the evenings.</p>
+            </div>
+            <div class="grid_4 mar_t_7 s2">
+              <h3>Full-time Programs</h3>
+              <p class="mar_t_2">An Ontario Private School with Full- Time Quran Memorization for select students who pass all testing requirements. Students enter the program in grade 5 and work on their Hifz for three years while studying the Ontario curriculum. The Full-Time Program offers a rich Ontario Curriculum taught by experienced professional teachers.</p>
+            </div>
+            <div class="grid_4 mar_t_7 s3">
+              <h3>Fees</h3>
+              <p class="mar_t_2">Alfurqan East/West Part-time: $400</p>
+              <p class="mar_t_2">Alfurqan After Abraar Part-time: $600</p>
+              <p class="mar_t_2">Methods of Payment: Online/Cash/Cheque</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="banner1 stellar-block">
+      <div class="container">
+        <ul class="row">
+          <!--<li class='grid_3 s1'>
+            <a href="#" class='a1'><img class="" src="images/p1_pic1.png" alt=""/><em>East</em></a>
+          </li>
+          <li class='grid_3 s1'>
+            <a href="#" class='a1'><img class="" src="images/p1_pic1.png" alt=""/><em>Alfurqan Part-time</em></a>
+          </li>
+          <li class='grid_3 s1'>
+            <a href="#" class='a1'><img class="" src="images/p1_pic1.png" alt=""/><em>Alfurqan Part-time</em></a>
+          </li>-->
+          <li class='grid_3 s1'>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpes2t-ik5zG--DgiDSUbtcw2bUw7N11kvwoahU3sC3ll_3g/viewform" target="_blank" class='a1'><!--img class="" src="images/p1_pic3.png" alt=""/--><em>Register</em></a>
+          </li>
+          <li class='grid_3 s2'>
+            <a href="https://www.paypal.com/ca/cgi-bin/webscr?SESSION=s5ODLEBzPp8BPuqigrykq8uxZY-jGIq_E-pVOwSi7NsmW0fWL01epuowQZW&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037" target="_blank" class='a1'><!--img class="" src="images/p1_pic3.png" alt=""/--><em>Pay East</em></a>
+          </li>
+          <li class='grid_3 s2'>
+            <a href="https://www.paypal.com/ca/cgi-bin/webscr?cmd=_flow&SESSION=bPgNRPQW7V7U_f3AADTKvr7cx4BDFrCAT_yfsRMmbgx5HjfiP1dcCGjaX9u&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=47df85d164ebc082eb3f1ee789dc7dd04bd4479d" target="_blank" class='a1'><!--img class="" src="images/p1_pic3.png" alt=""/--><em>Pay West</em></a>
+          </li>
+          <li class='grid_3 s3'>
+            <a href="https://www.paypal.com/ca/cgi-bin/webscr?cmd=_flow&SESSION=ynBiPuALlzG7b21uW8EdCDLmdRUfJbFtcHkWUeRNaRs4iU9ObGchYHN147O&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationBilling&rapidsStateSignature=5b3bd28e0506f3ebf49f384f2374328b97beb38c" target="_blank" class='a1'><!--img class="" src="images/p1_pic3.png" alt=""/--><em>Pay After Abraar</em></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--<section id='about_us'>
+    <div class='wrapper_2'>
+         <div   class="container">
+           <div class="row">
+             <div class="grid_12  tac">
+               <h2><span></span><em>about us</em><span></span></h2>
+             </div>
+           </div>
+           <div class="row">
+             <div class="grid_4 mar_t_7 s7">
+               <h3>Duis autem vel eum iriure </h3>
+               <p class="mar_t_2">Nam liber tempor cum soluta nobis eleifend opti on congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus </p>
+             </div>
+             <div class="grid_4 mar_t_7 s8">
+               <h3>Autem seerelu</h3>
+               <p class="mar_t_2">Soluta nobis eleifend opti on congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus d</p>
+             </div>
+             <div class="grid_4 mar_t_7">
+                         <div id="owl">
+           <div class="item">
+             <div class='title'>Soluta nobis eleifend opti on congue</div>
+               <img class="pic_1" src="images/p1_pic4.jpg" alt=""/>
+           </div>
+
+           <div class="item">
+             <div class='title'>Typi non habent claritatem insitam</div>
+               <img class="pic_1" src="images/p1_pic5.jpg" alt=""/>
+           </div>
+
+           <div class="item">
+             <div class='title'>Est usus legentis in iis qui facit eoru</div>
+               <img class="pic_1" src="images/p1_pic6.jpg" alt=""/>
+           </div>
+         </div>
+             </div>
+           </div>
+         </div>
+     </div>
+   </section>-->
+    <!-- <div class="banner2 stellar-block">
+     <div class="container">
+       <div class="row">
+         <div class="grid_12 s7">
+         <div class='block_1'>
+         <div class="row o_h">
+           <div class="grid_3">
+             <p class="p1 mar_t_15">Mike Gordon-Lee</p>
+           </div>
+           <div class="grid_9">
+              <p class="p2">“Nam liber tempor cum soluta nobis eleifend opti on congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritate. “</p>
+           </div>
+         </div>
+         </div>
+       </div>
+         </div>
+     </div>
+   </div>-->
+         <!--<div id='news' class='wrapper_3'>
+          <div class="container">
+            <div class="row">
+              <div class="grid_12 tac s10">
+                <h2><span></span><em>News</em><span></span></h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="grid_12">
+                 <div id="owl_1"  class="">
+                  <div class="item">
+                    <div class="row mar_t_5">
+                      <div class="grid_4 mar_t_2">
+                        <div class='bord_1'></div>
+                        <a href="#" class="a2 mar_t_2">Duis autem vel eum iriure dolor in hendrerit in vulputate velit</a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <a href="#" class='a3'>
+                          <span></span><em><img class="" src="images/calendar_i.png" alt=""/>27/09/2014</em>
+                          <img class="pic_1" src="images/p1_pic7.jpg" alt=""/>
+                        </a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <p class="">Soluta nobis eleifend opti on congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="row mar_t_5">
+                      <div class="grid_4 mar_t_2">
+                        <div class='bord_1'></div>
+                        <a href="#" class="a2 mar_t_2">Autem vel eum iriure dolor in hen drerit in vulputate</a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <a href="#" class='a3'>
+                          <span></span><em><img class="" src="images/calendar_i.png" alt=""/>28/09/2014</em>
+                          <img class="pic_1" src="images/p1_pic8.jpg" alt=""/>
+                        </a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <p class="">Bbis eleifend opti on congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="row mar_t_5">
+                      <div class="grid_4 mar_t_2">
+                        <div class='bord_1'></div>
+                        <a href="#" class="a2 mar_t_2">Typi non habent claritatem insitam; est usus legentis in iis qui facit eo
+rum clari</a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <a href="#" class='a3'>
+                          <span></span><em><img class="" src="images/calendar_i.png" alt=""/>31/09/2014</em>
+                          <img class="pic_1" src="images/p1_pic9.jpg" alt=""/>
+                        </a>
+                      </div>
+                      <div class="grid_4 mar_t_2">
+                        <p class="">Veing id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicusui sequitur mutation consuetudium lectorum.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>-->
+      <!--<div class="banner3 stellar-block">
+      <div class="container">
+        <div class="row">
+          <div class="grid_3 s11">
+            <h4>Resources:</h4>
+            <ul class="list_1">
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Lorem ipsum dolor sit amet</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Conse ctetur adipisicing</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Elit sed do eiusmod tempor</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Incididunt ut labore</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Ipsum dolor sit amet</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Conse ctetur adipisicing</a></li>
+              <li><img class="" src="images/list_dot.png" alt=""/><a href="#">Elit sed do eiusmod</a></li>
+            </ul>
+          </div>
+          <div class="grid_3 preffix_1 s12">
+            <h4>Address:</h4>
+            <p class="p3 mar_t_15">The Company Name Inc.<br>8901 Marmora Road, Glasgow,<br>D04 89GR.</p>
+            <h4 class='mar_t_45'>Telephones:</h4>
+            <p class="p3 mar_t_15">+1 800 559 6580<br>+1 800 603 6035</p>
+          </div>
+          <div class="grid_4 preffix_1 s13">
+            <h4>Support:</h4>
+            <p class="p3 mar_t_15">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim </p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 tac">
+      <img class="" src="images/logo-footer.png" alt=""/>
+            <div class="privacy-block">
+               <em>Copyright </em>&copy; <span id="copyright-year"></span> | <a href="index-5.html">Privacy policy</a>
+                  More <a rel="nofollow" href="http://www.templatemonster.com/category/religious-school-website-templates/" target="_blank">Alfurqan School</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

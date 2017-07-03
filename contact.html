@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name = "format-detection" content = "telephone=no" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/mailform.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/stellar.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-migrate-1.2.1.js"></script>
+
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <script src="js/jquery.mobile.customized.min.js"></script>
+
+  <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+
+<!--<![endif]-->
+  <!--[if lt IE 8]>
+  <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+  </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+
+</head>
+
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+  <div id="stuck_container">
+  <div class='top_bord'></div>
+
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+        <h1>
+        <a href="index.html">
+          <img src="images/alfurqan-logo.png" alt="Alfurqan School" height="80" width="80"/>
+          <em>Islamic school</em>
+        </a>
+      </h1>
+          <nav id="mainNav">
+            <ul class="sf-menu">
+              <li><a href="index.html">Home</a>
+            <div class="clearfix"></div>
+          </nav>
+    <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+
+<section id="content">
+  <div class="wrapper_9">
+<div class="container">
+  <div class="row">
+    <div class="grid_12 tac">
+     <h2><span></span><em>How to Find Us</em><span></span></h2>
+      <div class="google-map_contacts mar_t_35">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.851307013885!2d-75.79736258509516!3d45.35181374895759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce00da781fa64d%3A0xe3dae98421dde875!2sAbraar+School!5e0!3m2!1sen!2sca!4v1499040378726"
+              style="border:0"></iframe>
+    </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid_4 mar_t_25">
+      <h3>1085 Grenon Ave,<br>Ottawa, ON, K2B 8N1.</h3>
+      <address>
+        <p class="">Phone:+1 613 820 0044</p>
+        <p class="">E-mail: <a href="#">info@furqan.ca</a></p>
+      </address>
+    </div>
+    <!--div class="grid_4 mar_t_25">
+      <h3>9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT.</h3>
+      <address>
+        <p class=""><span>Freephone:</span>+1 800 559 6580</p>
+        <p class=""><span>Telephone:</span>+1 800 603 6035</p>
+        <p class=""><span>FAX:</span>+1 800 889 9898</p>
+        <p class="">E-mail: <a href="#">mail@demolink.org</a></p>
+      </address>
+    </div>
+    <div class="grid_4 mar_t_25">
+      <h3>9870 St Vincent Place,<br>Glasgow, DC 45 Fr 45.</h3>
+      <address>
+        <p class=""><span>Freephone:</span>+1 800 559 6580</p>
+        <p class=""><span>Telephone:</span>+1 800 603 6035</p>
+        <p class=""><span>FAX:</span>+1 800 889 9898</p>
+        <p class="">E-mail: <a href="#">mail@demolink.org</a></p>
+      </address>
+    </div-->
+  </div>
+</div>
+  </div>
+    <div class='banner8 stellar-block'>
+    <div class="container">
+    <div class="row">
+      <div class="grid_12 tac">
+         <h2><span></span><em>Contact Form</em><span></span></h2>
+      </div>
+    </div>
+       <div class="row mar_t_5">
+        <div class="grid_12">
+          <form method="post" action="bat/rd-mailform.php" class="mailform">
+              <input type="hidden" name="form-type" value="contact">
+              <fieldset>
+                <div class="row">
+                  <div class="grid_4">
+                    <label data-add-placeholder="">
+                      <input type="text" name="name" placeholder="Name*:" data-constraints="@LettersOnly @NotEmpty">
+                    </label>
+                  </div>
+                  <div class="grid_4">
+                    <label data-add-placeholder="">
+                      <input type="text" name="email" placeholder="Email*:" data-constraints="@Email @NotEmpty">
+                    </label>
+                  </div>
+                  <div class="grid_4">
+                    <label data-add-placeholder="">
+                      <input type="text" name="phone" placeholder="Phone:" data-constraints="@Phone">
+                    </label>
+                  </div>
+                </div>
+                <label>
+                  <textarea name="message" placeholder="Message:" data-constraints="@NotEmpty"></textarea>
+                </label>
+                <div class="mfControls">
+                  <button type="reset" class="btn-default_1">Clear</button>
+                  <button type="submit" class="btn-default_1">Send</button>
+                </div>
+                <div class="mfInfo"></div>
+              </fieldset>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12 tac">
+      <img class="" src="images/logo-footer.png" alt=""/>
+          <div class="privacy-block">
+             <em>Copyright </em>&copy; <span id="copyright-year"></span> | <a href="index-5.html">Privacy policy</a>
+                More <a rel="nofollow" href="http://www.templatemonster.com/category/religious-school-website-templates/" target="_blank">Alfurqan School</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+$(window).load(function(){
+    $('.icon').click(function(){
+      $('.searchForm').slideToggle('medium');
+    });
+})
+</script>
+</body>
+</html>
