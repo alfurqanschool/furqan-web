@@ -1,6 +1,6 @@
 <?php
 
-$recipients = '#';
+$recipients = 'mohamed.mhaggag@gmail.com';
 
 try {
     require './phpmailer/PHPMailerAutoload.php';
