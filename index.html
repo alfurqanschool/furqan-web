@@ -1,188 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name = "format-detection" content = "telephone=no" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/stellar.css">
-  <link rel="stylesheet" href="css/camera.css">
-  <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/owl.carousel.css">
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate-1.2.1.js"></script>
-  <script src="js/camera.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <!--[if (gt IE 9)|!(IE)]><!-->
-  <script src="js/jquery.mobile.customized.min.js"></script>
-  <!--<![endif]-->
-  <script>
-    $(document).ready(function () {
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/stellar.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script>
+        $(document).ready(function() {
 
-      $('#camera_wrap').camera({
-        loader: true,
-        pagination: true,
-        minHeight: '',
-        thumbnails: false,
-        height: '48.33333333333%',
-        caption: false,
-        navigation: false,
-        fx: 'simpleFade',
-        onLoaded: function () {
-          $('.slider-wrapper')[0].style.height = 'auto';
-        }
-      });
+            $('#camera_wrap').camera({
+                loader: true,
+                pagination: true,
+                minHeight: '',
+                thumbnails: false,
+                height: '48.33333333333%',
+                caption: false,
+                navigation: false,
+                fx: 'simpleFade',
+                onLoaded: function() {
+                    $('.slider-wrapper')[0].style.height = 'auto';
+                }
+            });
 
-       $("#owl").owlCarousel({
-        items: 1, //10 items above 1000px browser width
-        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
-        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
-        itemsTablet: [700, 1], //2 items between 600 and 0
-        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-        navigation: false,
-        pagination: true
-      });
+            $("#owl").owlCarousel({
+                items: 1, //10 items above 1000px browser width
+                itemsDesktop: [1199, 1], //5 items between 1000px and 901px
+                itemsDesktopSmall: [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation: false,
+                pagination: true
+            });
 
-        $("#owl_1").owlCarousel({
-        items: 1, //10 items above 1000px browser width
-        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
-        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
-        itemsTablet: [700, 1], //2 items between 600 and 0
-        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-        navigation: false,
-        pagination: true
-      });
-    });
-  </script>
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
-
-<!--<![endif]-->
-  <!--[if lt IE 8]>
-  <div style=' clear: both; text-align:center; position: relative;'>
-   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-   </a>
-  </div>
-  <![endif]-->
-  <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-  <![endif]-->
+            $("#owl_1").owlCarousel({
+                items: 1, //10 items above 1000px browser width
+                itemsDesktop: [1199, 1], //5 items between 1000px and 901px
+                itemsDesktopSmall: [767, 1], // betweem 900px and 601px
+                itemsTablet: [700, 1], //2 items between 600 and 0
+                itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+                navigation: false,
+                pagination: true
+            });
+        });
+    </script>
 </head>
+
 <body>
 
-<!--========================================================
+    <!--========================================================
                           HEADER
 =========================================================-->
-<header id="header">
-  <div id="stuck_container">
-  <div class='top_bord'></div>
+    <header id="header">
+        <div id="stuck_container">
+            <div class='top_bord'></div>
 
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-        <h1>
-        <a href="index.html">
-          <img src="images/alfurqan-logo.png" alt="Alfurqan School" height="80" width="80"/>
-        </a>
-      </h1>
-          <nav id="mainNav">
-            <ul class="sf-menu">
-              <li class="current"><a href="index.html">Home</a></li>
-              <!--<li><a href="#about_us">About</a></li>-->
-              <li><a href="fundraiser.html">Fundraiser</a></li>
-              <li><a href="admission.html">Admission</a></li>
-              <!--<li><a href="#news">News</a></li>-->
-              <li class="last-menu-item"><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="clearfix"></div>
-          </nav>
-    <div class="clearfix"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="index.html">
+                                <img src="images/alfurqan-logo.png" alt="Alfurqan School" height="80" width="80" />
+
+                            </a>
+                        </h1>
+                        <nav id="mainNav">
+                            <ul class="sf-menu">
+                                <li class="current"><a href="home.html">Home</a>
+                                </li>
+                                <li><a href="https://www.anfiq.org/al-furqan-school/alfurqan-school-ottawa/choose">Donate Now!</a></li>
+                                <li class="last-menu-item"><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </nav>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
-
-  </div>
-</header>
+    </header>
 
 
-<!--========================================================
+    <!--========================================================
                           CONTENT
 =========================================================-->
-<section id="content">
-  <div class="slider-wrapper">
-    <div id="camera_wrap">
-      <div data-src="images/slider1.jpg">
-      </div>
-      <div data-src="images/slider2.jpg">
-      </div>
-      <div data-src="images/slider3.jpg">
-    </div>
-    </div>
-    <div class="container">
-            <div class="row">
-              <div class="grid_12">
-    <div class="camera_pag"></div>
-    </div>
-    </div>
-    </div>
-  </div>
-   <div class='wrapper_1'>
-        <div class="container">
-          <div class="row">
-
-            <div class="grid_12 tac s1">
-              <h2><span></span><em>Welcome to Alfurqan School</em><span></span></h2>
+    <section id="content">
+        <div class='wrapper_11'>
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12 tac s1">
+                        <img src="images/banner_2018_120k.png" alt="Fundraising Campaign Bannaer" />
+                    </div>
+                    <!--div class="grid_8 preffix_2 tac s2">
+                        <p class="mar_t_3">Al-Furqan School has gone a long way from when it first started. Since the part time program launched in 2003 and then later the full-time program in 2011, we can now confidently say that, Alhamdulillah, we have a working model
+                            that graduates students with Quran in their hearts and actions. Now it is time to grow and achieve new heights. We humbly request your generous support in fostering a family of Quran memorizers!</p>
+                    </div-->
+                </div>
             </div>
-            <div class="grid_12 tac s1">
-              <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmacalfurqanschool%2Fvideos%2F1186022041501292%2F&show_text=0&width=560" width="560" height="295" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-
-            </div>
-
-            <div class="grid_8 preffix_2 tac s2">
-              <p class="mar_t_3">With 6 levels, highly qualified teachers, and volunteers, Furqan School aims at teaching its students the Arabic letters, proper pronunciation, and the vowels (accents) of the Arabic language. Students will memorize several chapters from the holy Quran in order to practice the learned material; and there by become equipped with the tools to enable them to memorize the whole Quran</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="grid_4 mar_t_7 s1">
-              <h3>Part-time Programs</h3>
-              <p class="mar_t_2"> In 2016 Alfurqan School part-time programs started teaching with the “Al-nooraniyah” to help students learn tajweed rules in an easier and faster manner. Our students memorize the last three Juz of the Quran over a period of six years in the evenings.</p>
-            </div>
-            <div class="grid_4 mar_t_7 s2">
-              <h3>Full-time Programs</h3>
-              <p class="mar_t_2">An Ontario Private School with Full- Time Quran Memorization for select students who pass all testing requirements. Students enter the program in grade 5 and work on their Hifz for three years while studying the Ontario curriculum. The Full-Time Program offers a rich Ontario Curriculum taught by experienced professional teachers.</p>
-            </div>
-            <div class="grid_4 mar_t_7 s3">
-              <h3>Resources</h3>
-              <p class="mar_t_2"><a href="calendar_2017_2018.pdf">School Calendar</a></p>
-              <p class="mar_t_2"><a href="students_code_of_conduct_nov_2017.pdf">Student's Code of Conduct</a></p>
-              <p class="mar_t_2"><a href="parents_handbook_nov_2017.pdf">Parent's Handbook</a></p>
-            </div>
-          </div>
         </div>
-    </div>
-</section>
+
+        <div class='wrapper_12'>
+            <div class="container">
+
+                <div class="row">
+                    <div class="grid_8 mar_t_7 s7">
+                        <iframe src="https://www.anfiq.org/node/306/embed" frameborder="0" width="100%" height="500" class="embedded-donation"></iframe>
+                    </div>
+                    <div class="grid_4 mar_t_7 s8 ">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmacalfurqanschool%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500"
+                            style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid_8 mar_t_7 s7">
+                        <h3>Al-Furqan School: Fostering a Family of Quran Memorizers </h3>
+                        <p class="mar_t_2">
+                            <Strong>A</Strong>l-Furqan School provides a very unique program in Ottawa, in fact in North America. It is unique in that it takes place within a Canadian context yet has the Quran at its foundation. Many students have graduated over the years
+                            with the Quran fully memorized and with academic skills that match or surpass their peers in public schools.
+                            <br>
+                            <Strong>S</Strong>ince its inception, Al-Furqan School has grown steadily from year to year. It started off with a part-time Quran Hifth program, but then in 2011, we embarked on a new project, with just five students, opening a full-time Islamic
+                            School that graduates students with the Quran fully memorized over a four-year period.
+                            <br>
+                            <Strong>W</Strong>e now offer both a part-time and full-time program and serve more than 350 students, aged 5 and above, at two separate locations in the city (one in the east end and one in the west). Some of our advanced students have transferred
+                            to our full-time elementary school, where they have memorized the entire Holy Quran. A few have even been given ijaza by our highly acclaimed Sheikh Abu Kudus, who himself has 10 qira'at. </p>
+                    </div>
+                    <div class="grid_4 mar_t_7 s8 ">
+                        <h3>Scaling to New Heights</h3>
+                        <p class="mar_t_2"></p>Over the last 15 years, many children have graduated from our Quran Hifth program, many of whom have benefited the Ottawa community from the knowledge they gained, such as by leading Taraweeh prayers in Ramadan. Due to the
+                        demand for our program, we have expanded our staff as well as the school’s facilities. In order to continue to provide our program at affordable fees, we are having to turn to the Muslim community and request their financial support.
+                        <br>
+                        <Strong>Now is the time to scale this unique program to be able to offer it to more children!</Strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-<!--========================================================
+    <!--========================================================
                           FOOTER
 =========================================================-->
-<footer id="footer">
-  <div class="container">
-    <div class="row">
-      <div class="grid_12 tac">
-      <img class="" src="images/logo-footer.png" alt=""/>
-            <div class="privacy-block">
-               <em>Copyright </em>&copy; <span id="copyright-year"></span> | <a href="index-5.html">Privacy policy</a>
-                  More <a rel="nofollow" href="http://www.templatemonster.com/category/religious-school-website-templates/" target="_blank">Alfurqan School</a>
-          </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="js/script.js"></script>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12 tac">
+                    <img class="" src="images/logo-footer.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
