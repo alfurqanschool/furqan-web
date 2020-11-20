@@ -1,0 +1,43 @@
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+
+  * {
+    box-sizing: border-box;
+    background-color: ghostwhite;
+  }
+
+  .link {
+      font-style: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: xx-large;
+      color: darkblue;
+      text-decoration: none;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
