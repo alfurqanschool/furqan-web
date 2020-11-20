@@ -1,80 +1,17 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Home</title>
-  <meta charset="utf-8">
-  <meta name = "format-detection" content = "telephone=no" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/stellar.css">
-  <link rel="stylesheet" href="css/camera.css">
-  <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/owl.carousel.css">
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery-migrate-1.2.1.js"></script>
-  <script src="js/camera.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <!--[if (gt IE 9)|!(IE)]><!-->
-  <script src="js/jquery.mobile.customized.min.js"></script>
-  <!--<![endif]-->
-  <script>
-    $(document).ready(function () {
-
-      $('#camera_wrap').camera({
-        loader: true,
-        pagination: true,
-        minHeight: '',
-        thumbnails: false,
-        height: '48.33333333333%',
-        caption: false,
-        navigation: false,
-        fx: 'simpleFade',
-        onLoaded: function () {
-          $('.slider-wrapper')[0].style.height = 'auto';
-        }
-      });
-
-       $("#owl").owlCarousel({
-        items: 1, //10 items above 1000px browser width
-        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
-        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
-        itemsTablet: [700, 1], //2 items between 600 and 0
-        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-        navigation: false,
-        pagination: true
-      });
-
-        $("#owl_1").owlCarousel({
-        items: 1, //10 items above 1000px browser width
-        itemsDesktop: [1199, 1], //5 items between 1000px and 901px
-        itemsDesktopSmall: [767, 1], // betweem 900px and 601px
-        itemsTablet: [700, 1], //2 items between 600 and 0
-        itemsMobile: [479, 1], // itemsMobile disabled - inherit from itemsTablet option
-        navigation: false,
-        pagination: true
-      });
-    });
-  </script>
-</head>
-<body>
-
-
-<!--========================================================
-                          CONTENT
-=========================================================-->
-<section id="content">
-  <div class="container">
-    <div class="row">
-        <div class="grid_6 mar_t_8">
-            <a class="btn-default" href="https://schools.macnet.ca/alfurqanftschoolottawa/">Alfurqan Elementary School</a>
-        </div>
-        <div class="grid_6 mar_t_8">
-          <a class="btn-default" href="https://schools.macnet.ca/alfurqanptschoolottawa/">Alfurqan Part-time School</a>
-        </div>
+  <head>
+    <link rel="stylesheet" href="script.css">
+    <title>Al-Furqan School</title>
+  </head>
+  <body>
+      <div class="flex-container vertical-center">
+          <div class="flex-item-left"><a class="link" href="#">Go to Al-Furqan Elementary</a></div>
+          <div class="flex-item-right"><a class="link" href="#">Go to Al-Furqan Part-time</a></div>        
+                  
+      </div> 
     </div>
-  </div>
-</section>
 
 
-</body>
+  </body>
 </html>
